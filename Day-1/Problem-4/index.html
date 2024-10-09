@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#">
+        <!-- Dropdown Menu -->
+        <div>
+            <label for="feedback">Feedback Type:</label>
+            <select name="feedback" id="feedback">
+                <option value="general">General Feedback</option>
+                <option value="bug">Report a Bug</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+        </div>
+
+        <!-- Text Area -->
+        <div>
+            <label for="u-msg">Your Message:</label>
+            <textarea name="u-msg" id="u-msg" rows="3" cols="30" placeholder="Write your message here"></textarea>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label for="">Rating our website:</label>
+            <label for="rate1">1</label>
+            <input type="radio" name="rating" id="rate1">
+            <label for="rate2">2</label>
+            <input type="radio" name="rating" id="rate2">
+            <label for="rate3">3</label>
+            <input type="radio" name="rating" id="rate3">
+            <label for="rate4">4</label>
+            <input type="radio" name="rating" id="rate4">
+            <label for="rate5">5</label>
+            <input type="radio" name="rating" id="rate5">
+        </div>
+
+        <!-- Age -->
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="10" max="100">
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" minlength="8">
+        </div>
+
+        <!-- Optional website URL -->
+        <div>
+            <label for="web">Website(Optional):</label>
+            <input type="url" id="web" placeholder="https://example.com">
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <label for="chc">
+                <input type="checkbox" id="chc" required> I agree to the terms and conditions.
+            </label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
